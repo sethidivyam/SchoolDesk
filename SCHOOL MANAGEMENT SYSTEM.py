@@ -27,7 +27,7 @@ import mysql.connector as conn
 database = conn.connect( host = 'localhost' , user = 'root' , passwd = 'mysql123' )
 dbconn = database.cursor(buffered=True)
             
-school_details = ['J.D. TYTLER SCHOOL ' , 'NEW RAJINDER NAGAR , R BLOCK , NEW DELHI 110060' , '85032' , 'Ms NEENA ANDREW' , 'divyamsethi1804@gmail.com' ]
+school_details = ['School name ' , 'School Address' , 'school code' , 'school Principle' , 'school email' ]
 
 try :
     school_logo = Image.open('C:/Users/divya/OneDrive/Desktop/PROJECT/JDTS LOGO.jpeg')
