@@ -29,10 +29,13 @@ dbconn = database.cursor(buffered=True)
             
 school_details = ['School name ' , 'School Address' , 'school code' , 'school Principle' , 'school email' ]
 
-try :
-    school_logo = Image.open('C:/Users/divya/OneDrive/Desktop/PROJECT/JDTS LOGO.jpeg')
-except :
-    pass
+try:
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    logo_path = os.path.join(current_dir, "logo.jpeg")
+
+    school_logo = Image.open(logo_path)
+except Exception as e:
+    print(f"Logo could not be loaded: {e}")
 
 try:
     query = 'use school;'
