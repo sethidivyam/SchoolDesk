@@ -6,7 +6,6 @@ from fpdf import FPDF
 from tkinter import *
 import tkinter as tk
 
-from PIL import Image
 
 import smtplib
 from email.mime.multipart import MIMEMultipart
